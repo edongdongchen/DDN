@@ -32,9 +32,10 @@ To Do...
 
 If you use these models in your research, please cite:
 
-	@article{chen2019ddn,
+	@inproceedings{chen2019ddn,
 		author = {Chen, Dongdong and Davies, Mike E},
 		title = {Deep Decomposition Learning for Inverse Imaging Problems},
-		booktitle={arXiv preprint arXiv:1911.11028},
-		year = {2019}
+		booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+		pages={0--0},
+		year = {2020}
 	}
