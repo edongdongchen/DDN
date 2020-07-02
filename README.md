@@ -1,5 +1,6 @@
 # ECCV'20 - Deep Decomposition Network (DDN)
-[[paper (old version)]](https://arxiv.org/abs/1911.11028)
+
+[paper]
 
 By [Dongdong Chen](http://dongdongchen.com), [Mike E. Davies](https://scholar.google.co.uk/citations?user=dwmfR3oAAAAJ&hl=en).
 
