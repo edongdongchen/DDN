@@ -1,6 +1,7 @@
-# ECCV'20 - Deep Decomposition Network (DDN)
+# Deep Decomposition Network (DDN)
+This is the implementation of ECCV'20 paper: [Deep Decomposition Network for Inverse Imaging Problems](https://arxiv.org/abs/1911.11028). 
+Code will be released soon.
 
-[paper]
 
 By [Dongdong Chen](http://dongdongchen.com), [Mike E. Davies](https://scholar.google.co.uk/citations?user=dwmfR3oAAAAJ&hl=en).
 
