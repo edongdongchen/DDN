@@ -26,7 +26,7 @@ Deep learning is emerging as a new paradigm for solving inverse imaging problems
 
 Inverse problem:
 
-![equation](https://latex.codecogs.com/gif.latex?\inline&space;y&space;=&space;Hx&space;&plus;&space;\epsilon)
+![equation](https://latex.codecogs.com/gif.latex?y_\epsilon=Hx&space;&plus;&space;\epsilon)
 
 range-nullspace decomposition of data:
 
