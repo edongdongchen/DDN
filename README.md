@@ -40,7 +40,7 @@ deep decomposition network (DDN) using cascade architecture
 
 ![alt text](figures/fig1c.png)
 
-performance in the super-resolution (SR, 2x noise_sigma=0.1) task
+performance (psnr) in the super-resolution (SR, 2x noise_sigma=0.1) task
 
 ![alt text](figures/fig_butterfly.png)
 
