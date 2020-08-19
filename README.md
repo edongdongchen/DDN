@@ -54,7 +54,7 @@ performance (psnr) in the super-resolution (SR, 2x noise_sigma=0.1) task
 0. run [sr_train.py](https://github.com/edongdongchen/DDN/blob/master/sr_train.py) to train a new DDN for the SR task. The dataset needs to be specified manually.
 0. the neura network architecture of DDN is defined in [network_arch.py](https://github.com/edongdongchen/DDN/blob/master/network_arch.py)
 0. the forward and pseudo-inverse operators are implemented in [operators.py](https://github.com/edongdongchen/DDN/blob/master/operators.py)
-0. note: the Magnetic Resonance Fingerprinting (MRF) data was from a partner company and we are restricted from sharing. Users need to specify their own dataset. Our code can be flexibly transferred or directly used on other customized MRF dataset. Please refer the forward/adjoint operators for MRF dataset in [another our project](https://github.com/edongdongchen/PGD-Net/blob/master/operators.py).
+0. note: the Magnetic Resonance Fingerprinting (MRF) data was from a partner company and we are restricted from sharing. Users need to specify their own dataset. Our code can be flexibly transferred or directly used on other customized MRF dataset. Please refer the forward/adjoint operators for MRF dataset in [another project](https://github.com/edongdongchen/PGD-Net/blob/master/operators.py).
 
 
 ### Citation
