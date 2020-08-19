@@ -1,5 +1,5 @@
 # Deep Decomposition Network (DDN) for inverse imaging problems
-This is the implementation of ECCV'20 paper:
+This is the PyTorch implementation of ECCV'20 paper:
 
 [Deep Decomposition Network for Inverse Imaging Problems](https://arxiv.org/abs/1911.11028). 
 
@@ -50,22 +50,15 @@ performance (psnr) in the super-resolution (SR, 2x noise_sigma=0.1) task
 
 ### Usage
 0. download [trained model](https://drive.google.com/file/d/1tTAcxAlA3ZIvEKUv5x1Qd9XJy4sLHp24/view) used in the SR examples.
-0. run [sr_test.py](https://github.com/edongdongchen/DDN/blob/master/sr_test.py) for the SR examples
+0. run [sr_test.py](https://github.com/edongdongchen/DDN/blob/master/sr_test.py) to test a pre-trained DDN  for the SR task by which predict the reconstruction of x, recovered range component Pr(x) and nullspace component Pn(x).
+0. run [sr_train.py](https://github.com/edongdongchen/DDN/blob/master/sr_train.py) to train a new DDN for the SR task. The dataset needs to be specified manually.
 0. the neura network architecture of DDN is defined in [network_arch.py](https://github.com/edongdongchen/DDN/blob/master/network_arch.py)
 0. the forward and pseudo-inverse operators are implemented in [operators.py](https://github.com/edongdongchen/DDN/blob/master/operators.py)
 0. note: the Magnetic Resonance Fingerprinting (MRF) data was from a partner company and we are restricted from sharing. Users need to specify their own dataset. Our code can be flexibly transferred or directly used on other customized MRF dataset. Please refer the forward/adjoint operators for MRF dataset in [another our project](https://github.com/edongdongchen/PGD-Net/blob/master/operators.py).
 
-### Example
-```
-python sr_test.py
-```
-to produce the reconstruction, recovered range component, nullspace component.
-
-
 
 ### Citation
 
-If you used our method/code in your research, please cite:
 
 	@inproceedings{chen2020decomposition,
 		author = {Chen, Dongdong and Davies, Mike E},
