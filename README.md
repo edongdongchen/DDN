@@ -24,12 +24,15 @@ Deep learning is emerging as a new paradigm for solving inverse imaging problems
 
 ### Motivation
 
-- <img src="https://latex.codecogs.com/gif.latex?y_{\epsilon} = Hx + \epsilon" /> 
-- <img src="https://latex.codecogs.com/gif.latex?x = H^+y_{\epsilon} + f + g" /> 
+Inverse problem:
 
-Inverse problem: $y_\epsilon = Hx + \epsilon$
+![equation](https://latex.codecogs.com/gif.latex?\inline&space;y&space;=&space;Hx&space;&plus;&space;\epsilon)
 
-range-nullspace decomposition of data $x = H^+y_\epsilon + f + g$.
+range-nullspace decomposition of data:
+
+![equation](https://latex.codecogs.com/gif.latex?\inline&space;x&space;=&space;H^{\dag}y_\epsilon&space;&plus;&space;f&space;&plus;&space;g)
+
+illustration:
 
 ![alt text](figures/fig1a.png)
 
@@ -37,7 +40,7 @@ deep decomposition network (DDN) using cascade architecture
 
 ![alt text](figures/fig1c.png)
 
-performance in super-resolution (SR) task
+performance in the super-resolution (SR, 2x noise_sigma=0.1) task
 
 ![alt text](figures/fig_butterfly.png)
 
@@ -62,7 +65,7 @@ to produce the reconstruction, recovered range component, nullspace component.
 
 ### Citation
 
-If you use these models in your research, please cite:
+If you used our method/code in your research, please cite:
 
 	@inproceedings{chen2020decomposition,
 		author = {Chen, Dongdong and Davies, Mike E},
