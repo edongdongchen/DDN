@@ -1,4 +1,4 @@
-# Deep Decomposition Network (DDN)
+# Deep Decomposition Network (DDN) for inverse imaging problems
 This is the implementation of ECCV'20 paper:
 
 [Deep Decomposition Network for Inverse Imaging Problems](https://arxiv.org/abs/1911.11028). 
