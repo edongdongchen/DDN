@@ -16,15 +16,18 @@ class DDN(nn.Module):
     def __init__(self, in_channels=3, out_channels=3, operator=None,
                  F='tiny_dncnn', G='compact_unet', connection_type='cascade'):
         super(DDN, self).__init__()
-        base_nets={'dncnn':DnCNNBlock,
-                   'tiny_dncnn':TinyDenoiser,
-                   'unet':UNet,
-                   'compact_unet':CompactUNet}
-        assert F in base_nets.keys(), 'Only tiny_dncnn, dncnn are tested!'
-        assert G in base_nets.keys(), 'Only unet is tested!'
+	
+        F_arch_hub = {'dncnn':DnCNNBlock, 
+                      'tiny_dncnn':TinyDenoiser}
 
-        self.F = DnCNNBlock(in_channels=in_channels, out_channels=out_channels)
-        self.G = UNet(in_channels=in_channels, out_channels=out_channels)
+        G_arch_hub = {'unet':UNet, 
+                      'compact_unet':CompactUNet}
+
+        assert F in F_arch_hub.keys(), 'Only dncnn, tiny_dncnn are tested!'
+        assert G in G_arch_hub.keys(), 'Only unet, compact_unet are tested!'
+
+        self.F = F_arch_hub[F](in_channels=in_channels, out_channels=out_channels)
+        self.G = G_arch_hub[G](in_channels=in_channels, out_channels=out_channels)
 
         self.operator = operator
         self.connection_type= connection_type
