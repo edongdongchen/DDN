@@ -3,7 +3,7 @@ This is the PyTorch implementation of ECCV'20 paper:
 
 [Deep Decomposition Network for Inverse Imaging Problems](https://arxiv.org/abs/1911.11028). 
 
-By [Dongdong Chen](http://dongdongchen.com), [Mike E. Davies](https://scholar.google.co.uk/citations?user=dwmfR3oAAAAJ&hl=en).
+By [Dongdong Chen](https://scholar.google.co.uk/citations?hl=en&user=eIrcIl8AAAAJ), [Mike E. Davies](https://scholar.google.co.uk/citations?user=dwmfR3oAAAAJ&hl=en).
 
 The University of Edinburgh, UK.
 
