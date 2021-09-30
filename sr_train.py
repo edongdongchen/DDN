@@ -82,8 +82,12 @@ def train(args):
     for e in range(args.epochs):
         ddn.train()
         loss_seq = []
-        for x, m, y in train_loader:
-            x, m, y = x.type(dtype), m.type(dtype), y.type(dtype)
+	for data in train_loader:
+	    x = data[0].type(dtype)
+            if len(x.shape)==5:
+                x = x.view(-1, x.shape[-3], x.shape[-2], x.shape[-1])
+	    # generate y
+            y = H(x)
             # init noise
             n = torch.from_numpy((np.random.normal(0, args.noise_sigam, y.shape))).type(dtype)  # Add Gaussian noise without clipping
             # calculate the psudo-inverse backprojected reconstruction HTy
